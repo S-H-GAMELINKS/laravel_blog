@@ -10,7 +10,7 @@ class HelloController extends Controller
         return "HelloController#index!";
     }
 
-    public function test($params) {
-        return $params
+    public function test($params='none') {
+        return $params;
     }
 }
