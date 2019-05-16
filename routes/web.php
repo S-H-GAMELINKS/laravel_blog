@@ -22,3 +22,5 @@ Route::get('/about', function () {
 Route::get('/message/{msg?}', function ($msg='none') {
     return $msg;
 });
+
+Route::get('/hello', 'HelloController@index');
