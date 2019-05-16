@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'sqlite3'),
 
     /*
     |--------------------------------------------------------------------------
@@ -79,7 +79,7 @@ return [
         ],
 
         'sqlsrv' => [
-            'driver' => 'sqlsrv',
+            'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '1433'),
