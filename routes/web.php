@@ -19,6 +19,6 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/message/{msg}', function ($msg) {
+Route::get('/message/{msg?}', function ($msg='none') {
     return $msg;
 });
