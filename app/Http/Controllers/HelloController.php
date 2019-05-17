@@ -15,6 +15,7 @@ class HelloController extends Controller
     }
 
     public function hello_index() {
-        return view('hello.index');
+        $data = ['msg' => 'This Message is given by HelloController'];
+        return view('hello.index', $data);
     }
 }
