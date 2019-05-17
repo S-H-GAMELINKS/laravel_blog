@@ -34,3 +34,5 @@ Route::get('/hello', 'HelloController@hello_query');
 
 Route::get('/hello/form', 'HelloController@form');
 Route::post('/hello/form', 'HelloController@post');
+
+Route::get('/hello/for_foreach', 'HelloController@for_foreach');

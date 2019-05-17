@@ -43,4 +43,12 @@ class HelloController extends Controller
 
         return view('hello.form', $data);
     }
+
+    public function for_foreach() {
+        $data = [
+            'msgs' => [1, 2, 3, 4, 5]
+        ];
+
+        return view('hello.for_foreach', $data);
+    }
 }
