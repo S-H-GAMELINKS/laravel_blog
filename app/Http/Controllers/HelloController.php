@@ -13,4 +13,8 @@ class HelloController extends Controller
     public function test($params='none') {
         return $params;
     }
+
+    public function hello_index() {
+        return view('hello.index');
+    }
 }

@@ -27,6 +27,4 @@ Route::get('/hello', 'HelloController@index');
 
 Route::get('/test/{params?}', 'HelloController@test');
 
-Route::get('/hello/index', function (){
-    return view('hello.index');
-});
+Route::get('/hello/index', 'HelloController@hello_index');
