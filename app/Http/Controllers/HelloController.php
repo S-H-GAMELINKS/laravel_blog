@@ -27,4 +27,20 @@ class HelloController extends Controller
 
         return view('hello.query', $data);
     }
+
+    public function form() {
+        $data = [
+            'msg' => ''
+        ];
+
+        return view('hello.form', $data);
+    }
+
+    public function post(Request $request) {
+        $data = [
+            'msg' => $request->msg
+        ];
+
+        return view('hello.form', $data);
+    }
 }

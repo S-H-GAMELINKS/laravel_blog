@@ -31,3 +31,6 @@ Route::get('/hello/index', 'HelloController@hello_index');
 Route::get('/hello/index/{id}', 'HelloController@hello_index');
 
 Route::get('/hello', 'HelloController@hello_query');
+
+Route::get('/hello/form', 'HelloController@form');
+Route::post('/hello/form', 'HelloController@post');
