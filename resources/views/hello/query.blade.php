@@ -1,2 +1,1 @@
-<?php echo $msg ?> 
-<?php echo $id ?>
+Message is {{ $msg }} : Query is {{ $id }}
