@@ -1,0 +1,2 @@
+<?php echo $msg ?> 
+<?php echo $id ?>

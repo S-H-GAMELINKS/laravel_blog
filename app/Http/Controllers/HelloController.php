@@ -18,4 +18,13 @@ class HelloController extends Controller
         $data = ['msg' => 'This Message is given by HelloController', 'id' => $id];
         return view('hello.index', $data);
     }
+
+    public function hello_query(Request $request) {
+        $data = [
+            'msg' => 'This Page is Query',
+            'id' => $request->id
+        ];
+
+        return view('hello.query', $data);
+    }
 }
