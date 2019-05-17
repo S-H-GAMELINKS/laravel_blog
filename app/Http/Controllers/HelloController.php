@@ -14,7 +14,7 @@ class HelloController extends Controller
         return $params;
     }
 
-    public function hello_index($id = 'zero') {
+    public function hello_index($id='zero') {
         $data = ['msg' => 'This Message is given by HelloController', 'id' => $id];
         return view('hello.index', $data);
     }
