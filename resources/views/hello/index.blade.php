@@ -1,4 +1,8 @@
-Hello#index Blade Template
+@extends('layouts.helloapp')
 
-<?php echo $msg ?> 
-<?php echo $id ?>
+@section('title', 'Hello#index Blade Template')
+
+@section('content')
+    <?php echo $msg ?> 
+    <?php echo $id ?>
+@endsection
