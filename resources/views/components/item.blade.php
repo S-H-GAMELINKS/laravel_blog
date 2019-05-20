@@ -1,0 +1,1 @@
+<p>{{ $item['name'] }} : {{ $item['mail'] }}</p>
