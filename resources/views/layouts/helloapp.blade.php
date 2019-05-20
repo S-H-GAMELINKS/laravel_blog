@@ -6,5 +6,10 @@
                 @yield('content')
             </div>
         </div>
+        @component('components.hello')
+            @slot('msg')
+                HOGE
+            @endslot
+        @endcomponent
     </body>
 </html>
