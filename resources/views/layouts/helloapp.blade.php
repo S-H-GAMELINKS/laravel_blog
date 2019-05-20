@@ -6,10 +6,6 @@
                 @yield('content')
             </div>
         </div>
-        @component('components.hello')
-            @slot('msg')
-                HOGE
-            @endslot
-        @endcomponent
+        @include('components.hello', ['msg' => 'HOGE'])
     </body>
 </html>
